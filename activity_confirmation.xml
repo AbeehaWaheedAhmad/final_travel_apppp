@@ -1,0 +1,27 @@
+<!-- res/layout/activity_confirmation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/confirmation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Flight is Confirmed...!!"
+        android:textSize="24sp"
+        android:textColor="@color/indigo"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle"
+        android:contentDescription="Confirmation Icon" />
+
+</LinearLayout>

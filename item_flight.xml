@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_button_grey"
+    android:marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvFlightName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flight Name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvFlightDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flight details (duration, stops, etc.)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:paddingTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFlightPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/primaryColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".PaymentSelectionActivity">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:paddingBottom="16dp"/>
+
+    <!-- Payment Methods Section -->
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioVisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:drawableLeft="@drawable/ic_credit_card"
+            android:drawablePadding="16dp"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioMastercard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Pay"
+            android:drawableLeft="@drawable/ic_google_pay"
+            android:drawablePadding="16dp"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioPaypal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paypal"
+            android:drawableLeft="@drawable/ic_paypal"
+            android:drawablePadding="16dp"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioAmericanExpress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visa"
+            android:drawableLeft="@drawable/ic_visa"
+            android:drawablePadding="16dp"
+            android:padding="16dp"/>
+    </RadioGroup>
+
+    <!-- Confirm Payment Button -->
+    <Button
+        android:id="@+id/btnConfirmPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Payment"
+        android:background="@drawable/rounded_button_primary"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
